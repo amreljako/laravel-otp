@@ -1,0 +1,61 @@
+{
+  "name": "amreljako/laravel-otp",
+  "description": "Advanced, secure OTP (Email/SMS/WhatsApp) package for Laravel with hashed codes, TTL, rate limiting, one-time use, events, and drivers.",
+  "keywords": [
+    "laravel",
+    "otp",
+    "2fa",
+    "sms",
+    "whatsapp",
+    "email",
+    "security"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Amr Elsayed",
+      "email": "amreljako@gmail.com",
+      "homepage": "https://github.com/amreljako"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^10.0|^11.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0|^9.0",
+    "pestphp/pest": "^3.0",
+    "pestphp/pest-plugin-laravel": "^3.0",
+    "nunomaduro/larastan": "^2.9",
+    "laravel/pint": "^1.17"
+  },
+  "autoload": {
+    "psr-4": {
+      "Amreljako\\Otp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Amreljako\\Otp\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Amreljako\\Otp\\OtpServiceProvider"
+      ],
+      "aliases": {
+        "Otp": "Amreljako\\Otp\\Facades\\Otp"
+      }
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest",
+    "format": "vendor/bin/pint",
+    "analyse": "vendor/bin/phpstan analyse"
+  },
+  "support": {
+    "issues": "https://github.com/amreljako/laravel-otp/issues"
+  }
+}
