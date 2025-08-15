@@ -26,6 +26,9 @@ jobs:
           php-version: ${{ matrix.php }}
           extensions: mbstring, bcmath, pdo_sqlite
           coverage: none
+          
+      - name: Allow Pest plugin
+        run: composer config --no-plugins allow-plugins.pestphp/pest-plugin true
 
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-progress --no-suggest
