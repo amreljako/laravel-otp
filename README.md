@@ -2,7 +2,11 @@
 
 Advanced, secure OTP (Email/SMS/WhatsApp) for Laravel. Hashed codes, TTL, one-time use, rate limiting, drivers, rules, and clean API.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/amreljako/laravel-otp.svg?style=flat-square)](https://packagist.org/packages/amreljako/laravel-otp)
+[![GitHub Stars](https://img.shields.io/github/stars/amreljako/laravel-otp.svg?style=flat-square)](https://github.com/amreljako/laravel-otp/stargazers)
+[![Total Downloads](https://img.shields.io/packagist/dt/amreljako/laravel-otp.svg?style=flat-square)](https://packagist.org/packages/amreljako/laravel-otp)
+[![License](https://img.shields.io/packagist/l/amreljako/laravel-otp.svg?style=flat-square)](https://packagist.org/packages/amreljako/laravel-otp/license)
+
 
 ## Features
 - Random OTP with configurable digits and TTL
